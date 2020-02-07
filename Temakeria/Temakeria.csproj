@@ -89,6 +89,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Banco\" />
     <Folder Include="Img\" />
     <Folder Include="Udl\" />
   </ItemGroup>

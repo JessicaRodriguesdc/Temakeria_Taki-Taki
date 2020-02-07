@@ -54,8 +54,8 @@
             this.addFuncionarioToolStripMenuItem});
             this.oPCOESToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.oPCOESToolStripMenuItem.Name = "oPCOESToolStripMenuItem";
-            this.oPCOESToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.oPCOESToolStripMenuItem.Text = "Opções";
+            this.oPCOESToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.oPCOESToolStripMenuItem.Text = "OPÇÕES";
             this.oPCOESToolStripMenuItem.Click += new System.EventHandler(this.oPCOESToolStripMenuItem_Click);
             // 
             // addFuncionarioToolStripMenuItem
@@ -63,16 +63,16 @@
             this.addFuncionarioToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.addFuncionarioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.addFuncionarioToolStripMenuItem.Name = "addFuncionarioToolStripMenuItem";
-            this.addFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.addFuncionarioToolStripMenuItem.Text = "AddFuncionario";
+            this.addFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addFuncionarioToolStripMenuItem.Text = "Funcionario";
             this.addFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.addFuncionarioToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.sairToolStripMenuItem.Text = "SAIR";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // Temakeria

@@ -59,18 +59,20 @@
             // Nome
             // 
             this.Nome.AutoSize = true;
-            this.Nome.Location = new System.Drawing.Point(60, 164);
+            this.Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nome.ForeColor = System.Drawing.SystemColors.Control;
+            this.Nome.Location = new System.Drawing.Point(41, 161);
             this.Nome.Name = "Nome";
-            this.Nome.Size = new System.Drawing.Size(38, 13);
+            this.Nome.Size = new System.Drawing.Size(53, 16);
             this.Nome.TabIndex = 0;
             this.Nome.Text = "Nome:";
             this.Nome.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(106, 160);
+            this.txtNome.Location = new System.Drawing.Point(108, 157);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(347, 20);
+            this.txtNome.Size = new System.Drawing.Size(364, 20);
             this.txtNome.TabIndex = 1;
             // 
             // btnAdd
@@ -85,7 +87,7 @@
             // 
             // maskedTel
             // 
-            this.maskedTel.Location = new System.Drawing.Point(121, 193);
+            this.maskedTel.Location = new System.Drawing.Point(125, 193);
             this.maskedTel.Mask = "(00)00000-0000";
             this.maskedTel.Name = "maskedTel";
             this.maskedTel.Size = new System.Drawing.Size(117, 20);
@@ -94,40 +96,47 @@
             // Tel
             // 
             this.Tel.AutoSize = true;
-            this.Tel.Location = new System.Drawing.Point(58, 200);
+            this.Tel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tel.ForeColor = System.Drawing.SystemColors.Control;
+            this.Tel.Location = new System.Drawing.Point(41, 198);
             this.Tel.Name = "Tel";
-            this.Tel.Size = new System.Drawing.Size(52, 13);
+            this.Tel.Size = new System.Drawing.Size(74, 16);
             this.Tel.TabIndex = 4;
             this.Tel.Text = "Telefone:";
             // 
-            // textBuscarNome
+            // txtBuscarNome
             // 
-            this.txtBuscarNome.Location = new System.Drawing.Point(155, 130);
-            this.txtBuscarNome.Name = "textBuscarNome";
+            this.txtBuscarNome.Location = new System.Drawing.Point(174, 130);
+            this.txtBuscarNome.Name = "txtBuscarNome";
             this.txtBuscarNome.Size = new System.Drawing.Size(298, 20);
             this.txtBuscarNome.TabIndex = 6;
             // 
             // buscarNome
             // 
             this.buscarNome.AutoSize = true;
-            this.buscarNome.Location = new System.Drawing.Point(60, 137);
+            this.buscarNome.BackColor = System.Drawing.SystemColors.Desktop;
+            this.buscarNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarNome.ForeColor = System.Drawing.SystemColors.Control;
+            this.buscarNome.Location = new System.Drawing.Point(41, 134);
             this.buscarNome.Name = "buscarNome";
-            this.buscarNome.Size = new System.Drawing.Size(87, 13);
+            this.buscarNome.Size = new System.Drawing.Size(127, 16);
             this.buscarNome.TabIndex = 5;
             this.buscarNome.Text = "Pesquisar Nome:";
             // 
             // Cel
             // 
             this.Cel.AutoSize = true;
-            this.Cel.Location = new System.Drawing.Point(276, 200);
+            this.Cel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cel.ForeColor = System.Drawing.SystemColors.Control;
+            this.Cel.Location = new System.Drawing.Point(287, 198);
             this.Cel.Name = "Cel";
-            this.Cel.Size = new System.Drawing.Size(42, 13);
+            this.Cel.Size = new System.Drawing.Size(61, 16);
             this.Cel.TabIndex = 8;
             this.Cel.Text = "Celular:";
             // 
             // maskedCel
             // 
-            this.maskedCel.Location = new System.Drawing.Point(340, 193);
+            this.maskedCel.Location = new System.Drawing.Point(360, 193);
             this.maskedCel.Mask = "(00)00000-0000";
             this.maskedCel.Name = "maskedCel";
             this.maskedCel.Size = new System.Drawing.Size(112, 20);
@@ -176,46 +185,50 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(107, 230);
+            this.txtEmail.Location = new System.Drawing.Point(108, 230);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(345, 20);
+            this.txtEmail.Size = new System.Drawing.Size(364, 20);
             this.txtEmail.TabIndex = 14;
             // 
             // email
             // 
             this.email.AutoSize = true;
-            this.email.Location = new System.Drawing.Point(60, 237);
+            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.ForeColor = System.Drawing.SystemColors.Control;
+            this.email.Location = new System.Drawing.Point(41, 234);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(38, 13);
+            this.email.Size = new System.Drawing.Size(56, 16);
             this.email.TabIndex = 13;
             this.email.Text = "E-mail:";
             // 
             // txtEnd
             // 
-            this.txtEnd.Location = new System.Drawing.Point(155, 265);
+            this.txtEnd.Location = new System.Drawing.Point(136, 265);
             this.txtEnd.Name = "txtEnd";
-            this.txtEnd.Size = new System.Drawing.Size(298, 20);
+            this.txtEnd.Size = new System.Drawing.Size(335, 20);
             this.txtEnd.TabIndex = 16;
             // 
             // endereco
             // 
             this.endereco.AutoSize = true;
-            this.endereco.Location = new System.Drawing.Point(61, 272);
+            this.endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.endereco.ForeColor = System.Drawing.SystemColors.Control;
+            this.endereco.Location = new System.Drawing.Point(41, 269);
             this.endereco.Name = "endereco";
-            this.endereco.Size = new System.Drawing.Size(56, 13);
+            this.endereco.Size = new System.Drawing.Size(79, 16);
             this.endereco.TabIndex = 15;
             this.endereco.Text = "Endereço:";
             // 
             // txtNum
             // 
-            this.txtNum.Location = new System.Drawing.Point(90, 298);
+            this.txtNum.Location = new System.Drawing.Point(79, 298);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(43, 20);
             this.txtNum.TabIndex = 18;
             // 
             // txtRG
             // 
-            this.txtRG.Location = new System.Drawing.Point(96, 332);
+            this.txtRG.Location = new System.Drawing.Point(94, 334);
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(148, 20);
             this.txtRG.TabIndex = 20;
@@ -223,15 +236,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(63, 339);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(41, 338);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.Size = new System.Drawing.Size(34, 16);
             this.label5.TabIndex = 19;
             this.label5.Text = "RG:";
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(206, 298);
+            this.txtBairro.Location = new System.Drawing.Point(224, 298);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(247, 20);
             this.txtBairro.TabIndex = 22;
@@ -239,24 +254,28 @@
             // bairro
             // 
             this.bairro.AutoSize = true;
-            this.bairro.Location = new System.Drawing.Point(154, 304);
+            this.bairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bairro.ForeColor = System.Drawing.SystemColors.Control;
+            this.bairro.Location = new System.Drawing.Point(153, 302);
             this.bairro.Name = "bairro";
-            this.bairro.Size = new System.Drawing.Size(37, 13);
+            this.bairro.Size = new System.Drawing.Size(54, 16);
             this.bairro.TabIndex = 21;
             this.bairro.Text = "Bairro:";
             // 
             // num
             // 
             this.num.AutoSize = true;
-            this.num.Location = new System.Drawing.Point(62, 304);
+            this.num.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num.ForeColor = System.Drawing.SystemColors.Control;
+            this.num.Location = new System.Drawing.Point(41, 302);
             this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(22, 13);
+            this.num.Size = new System.Drawing.Size(28, 16);
             this.num.TabIndex = 23;
             this.num.Text = "N°:";
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(305, 331);
+            this.txtCpf.Location = new System.Drawing.Point(323, 331);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(148, 20);
             this.txtCpf.TabIndex = 25;
@@ -264,9 +283,11 @@
             // cpf
             // 
             this.cpf.AutoSize = true;
-            this.cpf.Location = new System.Drawing.Point(267, 338);
+            this.cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpf.ForeColor = System.Drawing.SystemColors.Control;
+            this.cpf.Location = new System.Drawing.Point(266, 336);
             this.cpf.Name = "cpf";
-            this.cpf.Size = new System.Drawing.Size(30, 13);
+            this.cpf.Size = new System.Drawing.Size(41, 16);
             this.cpf.TabIndex = 24;
             this.cpf.Text = "CPF:";
             // 
@@ -274,7 +295,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(515, 400);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.cpf);

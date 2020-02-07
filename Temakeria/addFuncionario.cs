@@ -231,7 +231,7 @@ namespace Temakeria
 
                 comando.ExecuteNonQuery();
 
-                MessageBox.Show("CADASTRO EDITADO COM SUCESSO.");
+                MessageBox.Show("FUNCIONARIO EDITADO COM SUCESSO.");
             }
             catch (Exception ex)
             {
@@ -253,15 +253,15 @@ namespace Temakeria
             txtRG.Clear();
             txtCpf.Clear();
 
-            txtNome.Enabled = true;
-            maskedTel.Enabled = true;
-            maskedCel.Enabled = true;
-            txtEmail.Enabled = true;
-            txtEnd.Enabled = true;
-            txtNum.Enabled = true;
-            txtBairro.Enabled = true;
-            txtRG.Enabled = true;
-            txtCpf.Enabled = true;
+            txtNome.Enabled = false;
+            maskedTel.Enabled = false;
+            maskedCel.Enabled = false;
+            txtEmail.Enabled = false;
+            txtEnd.Enabled = false;
+            txtNum.Enabled = false;
+            txtBairro.Enabled = false;
+            txtRG.Enabled = false;
+            txtCpf.Enabled = false;
 
             btnEdt.Enabled = false;
             btnExcluir.Enabled = false;
@@ -269,7 +269,57 @@ namespace Temakeria
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+            txtBuscarNome.Enabled = true;
 
+            strSql = "delete from FuncionarioTemakeria where Nome=@Nome";
+
+            sqlCon = new SqlConnection(strCon);
+            SqlCommand comando = new SqlCommand(strSql, sqlCon);
+
+            comando.Parameters.Add("@Nome", SqlDbType.VarChar).Value = txtNome.Text;
+
+            try
+            {
+
+                sqlCon.Open();
+
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("FUNCIONARIO EXCLUIDO COM SUCESSO.");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+
+            txtNome.Clear();
+            maskedTel.Clear();
+            maskedCel.Clear();
+            txtEmail.Clear();
+            txtEnd.Clear();
+            txtNum.Clear();
+            txtBairro.Clear();
+            txtRG.Clear();
+            txtCpf.Clear();
+
+            txtNome.Enabled = false;
+            maskedTel.Enabled = false;
+            maskedCel.Enabled = false;
+            txtEmail.Enabled = false;
+            txtEnd.Enabled = false;
+            txtNum.Enabled = false;
+            txtBairro.Enabled = false;
+            txtRG.Enabled = false;
+            txtCpf.Enabled = false;
+
+            btnEdt.Enabled = false;
+            btnExcluir.Enabled = false;
         }
 
         private void maskedCel_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
