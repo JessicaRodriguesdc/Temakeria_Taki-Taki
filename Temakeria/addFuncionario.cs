@@ -17,7 +17,7 @@ namespace Temakeria
         {
             InitializeComponent();
 
-            txtBuscarNome.Enabled = false;
+            //txtBuscarNome.Enabled = false;
             txtNome.Enabled = false;
             maskedTel.Enabled = false;
             maskedCel.Enabled = false;
@@ -27,6 +27,10 @@ namespace Temakeria
             txtBairro.Enabled = false;
             txtRG.Enabled = false;
             txtCpf.Enabled = false;
+
+            btnSalvar.Enabled = false;
+            btnEdt.Enabled = false;
+            btnExcluir.Enabled = false;
 
         }
 
@@ -48,7 +52,7 @@ namespace Temakeria
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
-            
+            txtBuscarNome.Enabled = false;
             txtNome.Enabled = true;
             maskedTel.Enabled = true;
             maskedCel.Enabled = true;
@@ -58,6 +62,21 @@ namespace Temakeria
             txtBairro.Enabled = true;
             txtRG.Enabled = true;
             txtCpf.Enabled = true;
+
+            txtNome.Clear();
+            maskedTel.Clear();
+            maskedCel.Clear();
+            txtEmail.Clear();
+            txtEnd.Clear();
+            txtNum.Clear();
+            txtBairro.Clear();
+            txtRG.Clear();
+            txtCpf.Clear();
+
+            btnSalvar.Enabled = true;
+            btnBuscar.Enabled = false;
+            btnEdt.Enabled = false;
+            btnExcluir.Enabled = false;
 
         }
 
@@ -98,6 +117,16 @@ namespace Temakeria
 
             txtBuscarNome.Enabled = true;
 
+            txtNome.Enabled = false;
+            maskedTel.Enabled = false;
+            maskedCel.Enabled = false;
+            txtEmail.Enabled = false;
+            txtEnd.Enabled = false;
+            txtNum.Enabled = false;
+            txtBairro.Enabled = false;
+            txtRG.Enabled = false;
+            txtCpf.Enabled = false;
+
             txtNome.Clear();
             maskedTel.Clear();
             maskedCel.Clear();
@@ -108,15 +137,9 @@ namespace Temakeria
             txtRG.Clear();
             txtCpf.Clear();
 
-            txtNome.Enabled = false;
-            maskedTel.Enabled = false;
-            maskedCel.Enabled = false;
-            txtEmail.Enabled = false;
-            txtEnd.Enabled = false;
-            txtNum.Enabled = false;
-            txtBairro.Enabled = false;
-            txtRG.Enabled = false;
-            txtCpf.Enabled = false;
+            btnSalvar.Enabled = false;
+            btnBuscar.Enabled = true;
+            
 
         }
 
@@ -157,6 +180,10 @@ namespace Temakeria
                 txtBairro.Text = Convert.ToString(dr["Bairro"]);
                 txtRG.Text = Convert.ToString(dr["RG"]);
                 txtCpf.Text = Convert.ToString(dr["CPF"]);
+
+                btnSalvar.Enabled = false;
+                btnEdt.Enabled = true;
+                btnExcluir.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -169,11 +196,75 @@ namespace Temakeria
             }
 
             txtBuscarNome.Clear();
+
+            txtNome.Enabled = true;
+            maskedTel.Enabled = true;
+            maskedCel.Enabled = true;
+            txtEmail.Enabled = true;
+            txtEnd.Enabled = true;
+            txtNum.Enabled = true;
+            txtBairro.Enabled = true;
+            txtRG.Enabled = true;
+            txtCpf.Enabled = true;
         }
 
         private void btnEdt_Click(object sender, EventArgs e)
         {
+            strSql = "update FuncionarioTemakeria set Nome=@Nome,Telefone=@Telefone,Celular=@Celular,Email=@Email,Endereco=@Endereco,Numero=@Numero,Bairro=@Bairro,RG=@RG,CPF=@CPF where Nome=@Nome";
 
+            sqlCon = new SqlConnection(strCon);
+            SqlCommand comando = new SqlCommand(strSql, sqlCon);
+
+            comando.Parameters.Add("@Nome", SqlDbType.VarChar).Value = txtNome.Text;
+            comando.Parameters.Add("@Telefone", SqlDbType.VarChar).Value = maskedTel.Text;
+            comando.Parameters.Add("@Celular", SqlDbType.VarChar).Value = maskedCel.Text;
+            comando.Parameters.Add("@Email", SqlDbType.VarChar).Value = txtEmail.Text;
+            comando.Parameters.Add("@Endereco", SqlDbType.VarChar).Value = txtEnd.Text;
+            comando.Parameters.Add("@Numero", SqlDbType.VarChar).Value = txtNum.Text;
+            comando.Parameters.Add("@Bairro", SqlDbType.VarChar).Value = txtBairro.Text;
+            comando.Parameters.Add("@RG", SqlDbType.VarChar).Value = txtRG.Text;
+            comando.Parameters.Add("@CPF", SqlDbType.VarChar).Value = txtCpf.Text;
+
+            try
+            {
+                sqlCon.Open();
+
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("CADASTRO EDITADO COM SUCESSO.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+
+            txtNome.Clear();
+            maskedTel.Clear();
+            maskedCel.Clear();
+            txtEmail.Clear();
+            txtEnd.Clear();
+            txtNum.Clear();
+            txtBairro.Clear();
+            txtRG.Clear();
+            txtCpf.Clear();
+
+            txtNome.Enabled = true;
+            maskedTel.Enabled = true;
+            maskedCel.Enabled = true;
+            txtEmail.Enabled = true;
+            txtEnd.Enabled = true;
+            txtNum.Enabled = true;
+            txtBairro.Enabled = true;
+            txtRG.Enabled = true;
+            txtCpf.Enabled = true;
+
+            btnEdt.Enabled = false;
+            btnExcluir.Enabled = false;
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
