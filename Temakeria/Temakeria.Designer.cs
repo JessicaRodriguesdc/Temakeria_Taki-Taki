@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Temakeria));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.oPCOESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addFuncionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,15 @@
             this.oPCOESToolStripMenuItem.Text = "Opções";
             this.oPCOESToolStripMenuItem.Click += new System.EventHandler(this.oPCOESToolStripMenuItem_Click);
             // 
+            // addFuncionarioToolStripMenuItem
+            // 
+            this.addFuncionarioToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.addFuncionarioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.addFuncionarioToolStripMenuItem.Name = "addFuncionarioToolStripMenuItem";
+            this.addFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.addFuncionarioToolStripMenuItem.Text = "AddFuncionario";
+            this.addFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.addFuncionarioToolStripMenuItem_Click);
+            // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
@@ -65,15 +74,6 @@
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
-            // addFuncionarioToolStripMenuItem
-            // 
-            this.addFuncionarioToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addFuncionarioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.addFuncionarioToolStripMenuItem.Name = "addFuncionarioToolStripMenuItem";
-            this.addFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addFuncionarioToolStripMenuItem.Text = "AddFuncionario";
-            this.addFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.addFuncionarioToolStripMenuItem_Click);
             // 
             // Temakeria
             // 

@@ -24,7 +24,7 @@ namespace Temakeria
 
         private void addFuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            addFuncionario addFun = new addFuncionario();
+            rg addFun = new rg();
             addFun.ShowDialog();
         }
 

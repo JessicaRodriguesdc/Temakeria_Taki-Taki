@@ -2,9 +2,9 @@ C:\Users\jessi\source\repos\Temakeria\Temakeria\bin\Debug\Temakeria.exe.config
 C:\Users\jessi\source\repos\Temakeria\Temakeria\bin\Debug\Temakeria.exe
 C:\Users\jessi\source\repos\Temakeria\Temakeria\bin\Debug\Temakeria.pdb
 C:\Users\jessi\source\repos\Temakeria\Temakeria\obj\Debug\Temakeria.csprojAssemblyReference.cache
-C:\Users\jessi\source\repos\Temakeria\Temakeria\obj\Debug\Temakeria.addFuncionario.resources
 C:\Users\jessi\source\repos\Temakeria\Temakeria\obj\Debug\Temakeria.Temakeria.resources
 C:\Users\jessi\source\repos\Temakeria\Temakeria\obj\Debug\Temakeria.Properties.Resources.resources
 C:\Users\jessi\source\repos\Temakeria\Temakeria\obj\Debug\Temakeria.csproj.GenerateResource.cache
 C:\Users\jessi\source\repos\Temakeria\Temakeria\obj\Debug\Temakeria.exe
 C:\Users\jessi\source\repos\Temakeria\Temakeria\obj\Debug\Temakeria.pdb
+C:\Users\jessi\source\repos\Temakeria\Temakeria\obj\Debug\Temakeria.rg.resources
