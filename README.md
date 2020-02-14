@@ -1,2 +1,2 @@
 # Temakeria_Taki-Taki
-Aplicação em c#, utilizando windows form.
+Aplicação(CRUD) em c#, utilizando windows form.
