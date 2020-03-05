@@ -1,2 +1,2 @@
 # Temakeria_Taki-Taki
-Aplicação em c#, utilizando windows form e sql server.
+Aplicação em c#, utilizando windows form e SQL Server.
